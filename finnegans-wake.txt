@@ -1,0 +1,3 @@
+Welcome to CoinList Hackathon! 
+This is a Chrome Extension for NuCypher network built with Native Messaging protocol!
+

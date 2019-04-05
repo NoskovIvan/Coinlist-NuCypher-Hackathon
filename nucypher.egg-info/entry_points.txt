@@ -1,0 +1,4 @@
+[console_scripts]
+nucypher = nucypher.cli.main:nucypher_cli
+nucypher-deploy = nucypher.cli.deploy:deploy
+

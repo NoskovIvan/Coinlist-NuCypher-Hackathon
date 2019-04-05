@@ -1,0 +1,70 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3"
+
+[packages]
+# NuCypher
+umbral = "==0.1.3a0"
+constant-sorrow = ">=0.1.0a8"
+bytestring-splitter = ">=1.0.0a4"
+hendrix = ">=3.2.2"
+# Third-Party
+pyopenssl = "*"
+cryptography = ">=2.3"
+pysha3="*"
+requests = "*"
+sqlalchemy = "*"
+maya = "*"
+flask = "*"
+flask_sqlalchemy = "*"
+# Third-Party Ethereum
+py-evm = "==0.2.0a39"
+eth-tester = "*"
+coincurve = "*"
+web3 = "*"
+# CLI / Configuration
+sentry-sdk = "==0.5.2"
+appdirs = "*"
+click = ">=7.0"
+colorama = "*"
+boto3 = "*"
+flask-limiter = "*"
+
+[dev-packages]
+# Pytest
+pytest = "==4.0.2"
+pytest-xdist = "*"
+pytest-mypy = "*"
+pytest-twisted = "*"
+pytest-cov = "==2.5.1"
+pytest-mock = "*"
+# Tools
+moto = "*"
+mypy = "*"
+# Coverage
+coverage = "*"
+python-coveralls = "*"
+# Deployment
+py-solc = {editable = true,git = "https://github.com/nucypher/py-solc.git",ref = "v5.0.0-eol.0"}
+ansible = "*"
+bumpversion = "*"
+# Documentation
+sphinx = "*"
+recommonmark = "*"
+sphinx_rtd_theme = "*"
+aafigure = "*"
+# CLI
+nucypher = {editable = true,path = "."}
+
+[scripts]
+install-solc = "scripts/installation/install_solc.sh"
+estimate-gas = "python3 tests/metrics/estimate_gas.py"
+nucypher-deploy = "python3 nucypher/cli/deploy.py"
+nucypher = "python3 nucypher/cli/main.py"
+
+[pipenv]
+allow_prereleases = true
