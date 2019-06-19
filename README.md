@@ -41,7 +41,7 @@ Application exists two parts:
 
 # How does it work? 
 
-<img src="last.jpg" width="500px">
+ <img src="last.jpg" width="500px">
 
 Every crowdfunding company is a smart contract in a public blockchain Ethereum, which sale exclusive tokens. Everyone can support project and buy this tokens for ethereum coins. After that they can see seller's demo data, which he encrypt with NuCypher and shared for them. 
 Smart contract exists all information about project (author, title of project, amount of tokens for sale, how many tokens you can buy for 1 ETH etc). 
